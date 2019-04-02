@@ -1,0 +1,44 @@
+/*!
+ * Start Bootstrap - Round About (http://startbootstrap.com/template-overviews/round-about)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;    
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+#myImg:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+.headshot:hover {opacity: 0.7;}
+
+
+
+.parent {
+    display: flex;
+    overflow:auto;
+}
+
+.member-info {
+    margin: auto auto;
+    flex: 1;
+    padding:20px;
+}
+
+.modal-dialog {
+    max-width:700px;
+}
+
+.modal-content {
+    width:700px;
+}
+
+.rounded-circle {
+    cursor: pointer;
+    
+}

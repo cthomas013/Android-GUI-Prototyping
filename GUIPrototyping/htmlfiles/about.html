@@ -1,0 +1,285 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About</title>
+
+    <!-- Bootgit strap core CSS -->
+    <link href="{% static 'css/bootstrap.min.ven.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/round-about.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body style="background-color: #f0f0f0;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">ReDraw</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about">About
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gallery">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Introduction Row -->
+      <h1 class="my-4">About the Project
+        <!-- <small>It's Nice to Meet You!</small> -->
+      </h1>
+      <p>Application prototyping is a powerful way to present an initial idea to clients, 
+        in order to illustrate a proof of concept or give a general idea of the design of 
+        an application. Graphic design tools like Sketch 1, Pencil 2, and Photoshop among 
+        others greatly facilitate this process by allowing designers to create near pixel 
+        perfect representations of mobile application GUIs. While these tools are powerful, 
+        the prototyping process could be further extended to speed up initial steps of the 
+        mobile app development process. The SEMERU lab run by Dr. Poshyvanyk has created an 
+        approach for automatically prototyping Android application GUIs called ReDraw. This 
+        approach leverages recent advances in Machine Learning (ML) and Computer Vision (CV) 
+        techniques to automatically  detect, classify, and assemble prototype Android 
+        applications from a screenshot.</p>
+
+      <!-- Team Members Row -->
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-4">Our Team</h2>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <a class="pop">
+            <img class="rounded-circle img-fluid d-block mx-auto headshot" src="{% static 'images/tanishkaheadshot.png' %}" alt="">
+          </a>
+          <h3>Tanishka Amin
+            <small>UI Design</small>
+          </h3>
+          <p>Designs UI stuff</p>
+        </div>
+        <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">        
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <div class="parent">
+                  <div class="member-pic">
+                    <img src="" class="imagepreview" style="width: 250px; height:250px;" >
+                  </div>
+                  <div class="member-info">
+                    <span id="bio"><p>Tanishka is currently a senior at the College of William and Mary studying Computer Science. She enjoys eating
+                      chicken nuggets and designing webpages.
+                    </p></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <a class="pop2">
+            <img class="rounded-circle img-fluid d-block mx-auto headshot" src="{% static 'images/tylerheadshot.jpg' %}" alt="">
+          </a>
+          <h3>Tyler Bell
+            <small>Backend Engineer</small>
+          </h3>
+          <p>King of the backend</p>
+        </div>
+        <div class="modal fade" id="imagemodal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">        
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <div class="parent">
+                    <div class="member-pic">
+                      <img src="" class="imagepreview" style="width: 250px; height:250px;" >
+                    </div>
+                    <div class="member-info">
+                      <span id="bio"><p>Tyler is currently a senior at William and Mary majoring in Comp Sci. Hailing from Richmond
+                        Tyler for some reason went to school in Williamsburg.
+                      </p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+          <a class="pop3">
+          <img class="rounded-circle img-fluid d-block mx-auto headshot" src="{% static 'images/ruoyingheadshot.jpg' %}" alt="">
+          </a>
+          <h3>Ruoying Hao
+            <small>Download Initiator</small>
+          </h3>
+          <p>Makes that dl button work</p>
+        </div>
+        <div class="modal fade" id="imagemodal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">        
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <div class="parent">
+                    <div class="member-pic">
+                      <img src="" class="imagepreview" style="width: 250px; height:250px;" >
+                    </div>
+                    <div class="member-info">
+                      <span id="bio"><p>Ruoying is a senior at William and Mary majoring in Computer Science. She is a part of the 
+                        school's fencing team, fencing the dopest weapon épée.
+                      </p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-6 col-sm-6 text-center mb-4">
+          <a class="pop4">
+            <img class="rounded-circle img-fluid d-block mx-auto headshot" src="{% static 'images/noorheadshot.jpg' %}" alt="">
+            </a>
+          <h3>Noor Rahman
+            <small>HTML Peon</small>
+          </h3>
+          <p>Makes basic HTML pages</p>
+        </div>
+        <div class="modal fade" id="imagemodal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">        
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <div class="parent">
+                    <div class="member-pic">
+                      <img src="" class="imagepreview" style="width: 250px; height:250px;" >
+                    </div>
+                    <div class="member-info">
+                      <span id="bio"><p>Noor is currently a senior at the College of William and Mary studying Computer Science. 
+                        He peaked in this picture.
+                      </p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-6 col-sm-6 text-center mb-4">
+          <a class="pop5">
+            <img class="rounded-circle img-fluid d-block mx-auto headshot" src="{% static 'images/coryheadshot.jpg' %}" alt="">
+            </a>
+          <h3>Cory Thomas
+            <small>HTML Underling</small>
+          </h3>
+          <p>Attempts to make basic HTML pages</p>
+        </div>
+        <div class="modal fade" id="imagemodal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">        
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <div class="parent">
+                    <div class="member-pic">
+                      <img src="" class="imagepreview" style="width: 250px; height:250px;" >
+                    </div>
+                    <div class="member-info">
+                      <span id="bio"><p>Cory is currently a senior at the College of William and Mary studyng Computer Science. 
+                        He is garbage at FIFA, that's all you need to know.
+                      </p></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/placeholder.jpg' %}" alt="">
+            <h3>Richie Bonnet
+              <small>Project Leader</small>
+            </h3>
+            <p>Leads us to victory</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/placeholder.jpg' %}" alt="">
+            <h3>Kevin Moran
+              <small>Project Leader</small>
+            </h3>
+            <p>Controls the code</p>
+          </div>
+          <div class="col-lg-4 col-sm-6 text-center mb-4">
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{% static 'images/placeholder.jpg' %}" alt="">
+            <h3>Denys Poshyvanyk
+              <small>Professor</small>
+            </h3>
+            <p>Leads everyone to victory</p>
+          </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #FFFFFF;">
+      <div class="container">
+        <p class="m-0 text-center text-black">Copyright © 2017 Tanishka Amin, Tyler Bell, Ruoying Hao, Noor Rahman, Cory Thomas</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.ven.js' %}"></script>
+    <script>
+        $(function() {
+          $('.pop').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal').modal('show');
+            $('')   
+          });		
+          $('.pop2').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal2').modal('show');
+            $('')   
+          });	
+          $('.pop3').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal3').modal('show');
+            $('')   
+          });
+          $('.pop4').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal4').modal('show');
+            $('')   
+          });
+          $('.pop5').on('click', function() {
+            $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+            $('#imagemodal5').modal('show');
+            $('')   
+          });
+      });
+        </script>
+  </body>
+
+</html>

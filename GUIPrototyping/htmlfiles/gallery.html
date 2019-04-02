@@ -1,0 +1,159 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gallery</title>
+
+    <!-- Bootgit strap core CSS -->
+    <link href="{% static 'css/bootstrap.min.ven.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/round-about.css' %}" rel="stylesheet">
+    <style type="text/css">
+      /* Navigation section */
+      .navbar-default {
+          background: #ffffff;
+          border: none;
+          box-shadow: 0px 8px 8px 0px rgba(50, 50, 50, 0.04);
+          margin: 0 !important;
+      }
+
+      .navbar-default .navbar-brand {
+        color: #505050;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 40px;
+        margin: 0;
+      }
+
+      .navbar-default .navbar-nav li a {
+          color: #757575;
+          font-size: 19px;
+          font-weight: 300;
+          line-height: 50px;
+          -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out;
+      }
+
+      .navbar-default .navbar-nav > li a:hover {
+          color: #c21500 !important;
+      }
+
+      .navbar-default .navbar-nav > li > a:hover,
+      .navbar-default .navbar-nav > li > a:focus {
+          color: #606060;
+          background-color: transparent;
+      }
+
+      .navbar-default .navbar-nav > .active > a,
+      .navbar-default .navbar-nav > .active > a:hover,
+      .navbar-default .navbar-nav > .active > a:focus {
+          color: #c21500;
+          background-color: transparent;
+      }
+
+      .navbar-default .navbar-toggle {
+           border: none;
+           padding-top: 10px;
+        }
+
+      .navbar-default .navbar-toggle .icon-bar {
+          border-color: transparent;
+        }
+
+      .navbar-default .navbar-toggle:hover,
+      .navbar-default .navbar-toggle:focus { 
+        background-color: transparent;
+      }
+    </style>
+
+</head>
+<body style="background-color: #f0f0f0;">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="/">ReDraw</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/gallery">Gallery
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+		<div class="container gallery-container">
+
+			<p><br /></p>
+
+	    <h1><center>Screenshot Trophycase</center></h1>
+
+			<p><br /><center>This is just a gallery containing some of the original screenshots that we used for the webapp. We originally used these for testing to make sure that our webapp was working correctly</center><br /></p>
+	    
+	    <div class="tz-gallery">
+
+	        <div class="row">
+	            <div class="col-sm-6 col-md-4">
+	                <img src="{% static 'images/dropbox-1200x1920.png' %}" alt="" height='480' width='300'>
+	           		</div>
+	            <div class="col-sm-6 col-md-4">
+	                <img src="{% static 'images/google-translate-1200x1920.png' %}" alt="" height='480' width='300'>
+	           		</div>
+	            <div class="col-sm-12 col-md-4">
+	                <img src="{% static 'images/pandora-1200x1920.png' %}" alt="" height='480' width='300'>
+	            	</div>
+	        	</div>
+	    	</div>
+
+			<p><br /></p>
+
+				<div class="tz-gallery">
+	        <div class="row">
+	    				<div class="col-sm-6 col-md-4">
+	                <img src="{% static 'images/ringtones-1200x1920.png' %}" alt="" height='480' width='300'>
+	            	</div>
+	            <div class="col-sm-6 col-md-4">
+	                <img src="{% static 'images/tether2-1200x1920.png' %}" alt="" height='480' width='300'>
+	            	</div>
+	            <div class="col-sm-6 col-md-4">
+	                <img src="{% static 'images/weather-1200x1920.png' %}" alt="" height='480' width='300'>
+	            	</div>
+	           </div>
+	         	</div>
+
+		</div>
+
+		<!-- Some spacing at the bottom before the footer to make the page look a little prittier -->
+		<p><br /></p>
+
+		<!-- Footer -->
+    <footer class="py-5" style="background-color: #FFFFFF;">
+      <div class="container">
+        <p class="m-0 text-center text-black">Copyright © 2017 Tanishka Amin, Tyler Bell, Ruoying Hao, Noor Rahman, Cory Thomas</p>
+      </div>
+      <!-- /.container -->
+    </footer>	
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>
